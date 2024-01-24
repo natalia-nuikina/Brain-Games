@@ -3,4 +3,5 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/6db21d0c188996a307c6/maintainability)](https://codeclimate.com/github/natalia-nuikina/frontend-project-44/maintainability)
 
 ### Asciinema:
-[[DEMO]](https://asciinema.org/a/0XgamVlRsH6ojOX8i8HIFbyNe)
+[[DEMO Brain-even]](https://asciinema.org/a/0XgamVlRsH6ojOX8i8HIFbyNe)
+[[DEMO Brain-calc]](https://asciinema.org/a/SLkxu2hZrkslGYRrZ6wkDVFFH)
