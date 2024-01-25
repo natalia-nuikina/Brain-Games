@@ -7,3 +7,4 @@
 [[DEMO Brain-calc]](https://asciinema.org/a/SLkxu2hZrkslGYRrZ6wkDVFFH)
 [[DEMO Brain-gcd]](https://asciinema.org/a/68hcSLtJfo64OFnw7VeLd3tZb)
 [[DEMO Brain-progression]](https://asciinema.org/a/XdsGE4gaWQ0id2rNNtDtEZbyb)
+[[DEMO Brain-prime]]( https://asciinema.org/a/PVXjfxzeiD4AnnE4jXobMo7KJ)
