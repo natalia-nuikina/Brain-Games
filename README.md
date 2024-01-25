@@ -5,3 +5,4 @@
 ### Asciinema:
 [[DEMO Brain-even]](https://asciinema.org/a/0XgamVlRsH6ojOX8i8HIFbyNe)
 [[DEMO Brain-calc]](https://asciinema.org/a/SLkxu2hZrkslGYRrZ6wkDVFFH)
+[[DEMO Brain-gcd]](https://asciinema.org/a/68hcSLtJfo64OFnw7VeLd3tZb)
