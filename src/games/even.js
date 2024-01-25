@@ -1,5 +1,5 @@
-import userName from './cli.js';
-import workWithUser from './index.js';
+import userName from '../cli.js';
+import workWithUser from '../index.js';
 
 const brainGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');

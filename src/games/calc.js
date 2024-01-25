@@ -1,5 +1,5 @@
-import userName from './cli.js';
-import workWithUser from './index.js';
+import userName from '../cli.js';
+import workWithUser from '../index.js';
 
 const calc = (roundMathOperation, roundNumber1, roundNumber2) => {
   let result;
