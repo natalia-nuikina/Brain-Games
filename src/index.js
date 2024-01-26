@@ -7,10 +7,12 @@ const workWithUser = (question, correctAnswer) => {
   if (userAnswer === correctAnswer) {
     console.log('Correct!');
     return 1;
-  } else {
+  }
+  if (userAnswer !== correctAnswer) {
     console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${userName}!`);
     return 0;
   }
+  return null;
 };
 
 export default workWithUser;

@@ -8,6 +8,7 @@ const findGcd = (roundNumber1, roundNumber2) => {
       return String(gcd);
     }
   }
+  return 1;
 };
 
 const brainGameGcd = () => {

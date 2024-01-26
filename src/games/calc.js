@@ -23,9 +23,9 @@ const brainGameCalc = () => {
   for (let i = 0; i < 3; i += 1) {
     const roundNumber1 = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
     const roundNumber2 = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
-    const roundMathOperation = arrMathOperations[Math.floor(Math.random() * arrMathOperations.length)];
-    const question = `${roundNumber1} ${roundMathOperation} ${roundNumber2}`;
-    const correctAnswer = calc(roundMathOperation, roundNumber1, roundNumber2);
+    const roundOperation = arrMathOperations[Math.floor(Math.random() * arrMathOperations.length)];
+    const question = `${roundNumber1} ${roundOperation} ${roundNumber2}`;
+    const correctAnswer = calc(roundOperation, roundNumber1, roundNumber2);
     const isCorrect = workWithUser(question, correctAnswer);
     if (isCorrect === 0) {
       return;

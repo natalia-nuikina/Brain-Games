@@ -17,8 +17,8 @@ const brainGameProgression = () => {
   const arrProgressionSteps = ['2', '3', '3', '5'];
   for (let i = 0; i < 3; i += 1) {
     const roundStartNumber = Math.round(Math.random() * 10); // '* 10' получаем число > 0 и < 10
-    const roundProgressionStep = arrProgressionSteps[Math.floor(Math.random() * arrProgressionSteps.length)];
-    const resultArr = arrRoundProgressin(roundStartNumber, roundProgressionStep);
+    const roundStep = arrProgressionSteps[Math.floor(Math.random() * arrProgressionSteps.length)];
+    const resultArr = arrRoundProgressin(roundStartNumber, roundStep);
 
     const randomArrIndex = Math.floor(Math.random() * 10); // '* 10' получаем число > 0 и < 10
     const correctAnswer = String(resultArr[randomArrIndex]);
