@@ -1,18 +1,22 @@
-import userName from '../cli.js';
 import workWithUser from '../index.js';
 
-const brainGame = () => {
-  console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  let correctAnswer;
-  for (let i = 0; i < 3; i += 1) {
-    const roundNumber = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
-    correctAnswer = (roundNumber % 2 === 0) ? 'yes' : 'no';
-    const question = roundNumber;
-    const isCorrect = workWithUser(question, correctAnswer);
-    if (isCorrect === 0) {
-      return;
+const brainGameEven = () => {
+  const task = 'Answer "yes" if the number is even, otherwise answer "no".';
+  const getArrQuestionsAnswers = () => {
+    const result = [];
+    for (let i = 0; i < 3; i += 1) {
+      const round = [];
+
+      const roundQuestion = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
+      const roundAnswer = (roundQuestion % 2 === 0) ? 'yes' : 'no';
+
+      round.push(roundQuestion);
+      round.push(roundAnswer);
+      result.push(round);
     }
-  }
-  console.log(`Congratulations, ${userName}!`);
+    return result;
+  };
+  workWithUser(task, getArrQuestionsAnswers());
 };
-export default brainGame;
+
+export default brainGameEven;

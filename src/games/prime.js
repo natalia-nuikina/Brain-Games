@@ -1,4 +1,3 @@
-import userName from '../cli.js';
 import workWithUser from '../index.js';
 
 const prime = (roundNumber) => {
@@ -14,17 +13,22 @@ const prime = (roundNumber) => {
 };
 
 const brainGamePrime = () => {
-  console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
-  for (let i = 0; i < 3; i += 1) {
-    const roundNumber = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
-    const question = roundNumber;
-    const correctAnswer = prime(roundNumber);
+  const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
+  const getArrQuestionsAnswers = () => {
+    const result = [];
+    for (let i = 0; i < 3; i += 1) {
+      const round = [];
 
-    const isCorrect = workWithUser(question, correctAnswer);
-    if (isCorrect === 0) {
-      return;
+      const roundNumber = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
+      const roundQuestion = roundNumber;
+      const roundAnswer = prime(roundNumber);
+
+      round.push(roundQuestion);
+      round.push(roundAnswer);
+      result.push(round);
     }
-  }
-  console.log(`Congratulations, ${userName}!`);
+    return result;
+  };
+  workWithUser(task, getArrQuestionsAnswers());
 };
 export default brainGamePrime;

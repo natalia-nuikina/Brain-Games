@@ -1,4 +1,3 @@
-import userName from '../cli.js';
 import workWithUser from '../index.js';
 
 const arrRoundProgressin = (roundStartNumber, roundProgressionStep) => {
@@ -13,23 +12,29 @@ const arrRoundProgressin = (roundStartNumber, roundProgressionStep) => {
 };
 
 const brainGameProgression = () => {
-  console.log('What number is missing in the progression?');
+  const task = 'What number is missing in the progression?';
   const arrProgressionSteps = ['2', '3', '3', '5'];
-  for (let i = 0; i < 3; i += 1) {
-    const roundStartNumber = Math.round(Math.random() * 10); // '* 10' получаем число > 0 и < 10
-    const roundStep = arrProgressionSteps[Math.floor(Math.random() * arrProgressionSteps.length)];
-    const resultArr = arrRoundProgressin(roundStartNumber, roundStep);
+  const getArrQuestionsAnswers = () => {
+    const result = [];
+    for (let i = 0; i < 3; i += 1) {
+      const round = [];
 
-    const randomArrIndex = Math.floor(Math.random() * 10); // '* 10' получаем число > 0 и < 10
-    const correctAnswer = String(resultArr[randomArrIndex]);
-    resultArr.splice(randomArrIndex, 1, '..');
-    const question = resultArr.join(' ');
+      const roundStartNumber = Math.round(Math.random() * 10); // '* 10' получаем число > 0 и < 10
+      const roundStep = arrProgressionSteps[Math.floor(Math.random() * arrProgressionSteps.length)];
+      const resultArr = arrRoundProgressin(roundStartNumber, roundStep);
 
-    const isCorrect = workWithUser(question, correctAnswer);
-    if (isCorrect === 0) {
-      return;
+      const randomArrIndex = Math.floor(Math.random() * 10); // '* 10' получаем число > 0 и < 10
+      const roundAnswer = String(resultArr[randomArrIndex]);
+      resultArr.splice(randomArrIndex, 1, '..');
+      const roundQuestion = resultArr.join(' ');
+
+      round.push(roundQuestion);
+      round.push(roundAnswer);
+      result.push(round);
     }
-  }
-  console.log(`Congratulations, ${userName}!`);
+    return result;
+  };
+  workWithUser(task, getArrQuestionsAnswers());
 };
+
 export default brainGameProgression;
