@@ -17,8 +17,8 @@ const brainGameGcd = () => {
     for (let i = 0; i < 3; i += 1) {
       const round = [];
 
-      const roundNumber1 = Math.round(Math.ceil() * 100); // '* 100' получаем число > 0 и <= 100
-      const roundNumber2 = Math.round(Math.ceil() * 100); // '* 100' получаем число > 0 и <= 100
+      const roundNumber1 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
+      const roundNumber2 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
       const roundAnswer = findGcd(roundNumber1, roundNumber2);
       const roundQuestion = `${roundNumber1} ${roundNumber2}`;
 
