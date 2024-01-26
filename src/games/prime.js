@@ -16,7 +16,7 @@ const prime = (roundNumber) => {
 const brainGamePrime = () => {
   console.log('Answer "yes" if given number is prime. Otherwise answer "no".');
   for (let i = 0; i < 3; i += 1) {
-    const roundNumber = Math.round(Math.random() * 100); // '* 100' получаем рандомное число > 0 и < 100
+    const roundNumber = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
     const question = roundNumber;
     const correctAnswer = prime(roundNumber);
 

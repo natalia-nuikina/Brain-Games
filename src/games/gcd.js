@@ -12,10 +12,9 @@ const findGcd = (roundNumber1, roundNumber2) => {
 
 const brainGameGcd = () => {
   console.log('Find the greatest common divisor of given numbers.');
-  const toGetWholeNum = 100;
   for (let i = 0; i < 3; i += 1) {
-    const roundNumber1 = Math.round(Math.random() * toGetWholeNum);
-    const roundNumber2 = Math.round(Math.random() * toGetWholeNum);
+    const roundNumber1 = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
+    const roundNumber2 = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
     const correctAnswer = findGcd(roundNumber1, roundNumber2);
     const question = `${roundNumber1} ${roundNumber2}`;
     const isCorrect = workWithUser(question, correctAnswer);

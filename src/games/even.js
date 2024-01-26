@@ -3,10 +3,9 @@ import workWithUser from '../index.js';
 
 const brainGame = () => {
   console.log('Answer "yes" if the number is even, otherwise answer "no".');
-  const toGetWholeNum = 100;
   let correctAnswer;
   for (let i = 0; i < 3; i += 1) {
-    const roundNumber = Math.round(Math.random() * toGetWholeNum);
+    const roundNumber = Math.round(Math.random() * 100); // '* 100' получаем число > 0 и < 100
     correctAnswer = (roundNumber % 2 === 0) ? 'yes' : 'no';
     const question = roundNumber;
     const isCorrect = workWithUser(question, correctAnswer);
