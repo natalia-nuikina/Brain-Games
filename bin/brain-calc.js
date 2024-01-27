@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import brainGameCalc from '../src/games/calc.js';
+import { task, getArrQuestionAnswer } from '../src/games/calc.js';
+import workWithUser from '../src/index.js';
 
-brainGameCalc();
+workWithUser(task, getArrQuestionAnswer);

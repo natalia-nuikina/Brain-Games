@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import brainGameEven from '../src/games/even.js';
+import { task, getArrQuestionAnswer } from '../src/games/even.js';
+import workWithUser from '../src/index.js';
 
-brainGameEven();
+workWithUser(task, getArrQuestionAnswer);

@@ -1,5 +1,3 @@
-import workWithUser from '../index.js';
-
 const findGcd = (roundNumber1, roundNumber2) => {
   let gcd = (roundNumber1 <= roundNumber2) ? roundNumber1 : roundNumber2;
   for (gcd; gcd > 0; gcd -= 1) {
@@ -10,24 +8,17 @@ const findGcd = (roundNumber1, roundNumber2) => {
   return undefined;
 };
 
-const brainGameGcd = () => {
-  const task = 'Find the greatest common divisor of given numbers.';
-  const getArrQuestionsAnswers = () => {
-    const result = [];
-    for (let i = 0; i < 3; i += 1) {
-      const round = [];
+export const task = 'Find the greatest common divisor of given numbers.';
 
-      const roundNumber1 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
-      const roundNumber2 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
-      const roundAnswer = findGcd(roundNumber1, roundNumber2);
-      const roundQuestion = `${roundNumber1} ${roundNumber2}`;
+export const getArrQuestionAnswer = () => {
+  const result = [];
 
-      round.push(roundQuestion);
-      round.push(roundAnswer);
-      result.push(round);
-    }
-    return result;
-  };
-  workWithUser(task, getArrQuestionsAnswers());
+  const roundNumber1 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
+  const roundNumber2 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
+  const roundAnswer = findGcd(roundNumber1, roundNumber2);
+  const roundQuestion = `${roundNumber1} ${roundNumber2}`;
+
+  result.push(roundQuestion);
+  result.push(roundAnswer);
+  return result;
 };
-export default brainGameGcd;

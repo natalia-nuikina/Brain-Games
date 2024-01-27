@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import brainGamePrime from '../src/games/prime.js';
+import { task, getArrQuestionAnswer } from '../src/games/prime.js';
+import workWithUser from '../src/index.js';
 
-brainGamePrime();
+workWithUser(task, getArrQuestionAnswer);

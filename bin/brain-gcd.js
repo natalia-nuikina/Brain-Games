@@ -1,4 +1,5 @@
 #!/usr/bin/env node
-import brainGameGcd from '../src/games/gcd.js';
+import { task, getArrQuestionAnswer } from '../src/games/gcd.js';
+import workWithUser from '../src/index.js';
 
-brainGameGcd();
+workWithUser(task, getArrQuestionAnswer);
