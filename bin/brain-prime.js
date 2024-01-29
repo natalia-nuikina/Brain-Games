@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { task, getArrQuestionAnswer } from '../src/games/prime.js';
-import workWithUser from '../src/index.js';
+import { startGame } from '../src/games/prime.js';
 
-workWithUser(task, getArrQuestionAnswer);
+startGame();

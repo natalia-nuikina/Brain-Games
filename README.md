@@ -17,9 +17,15 @@ brain-games
 ```
 
 ### Asciinema:
-[[Demo Install Brain-games]](https://asciinema.org/a/pndO6OGfilZJBofy9BHXwVJbJ)
-[[DEMO Brain-even]](https://asciinema.org/a/0XgamVlRsH6ojOX8i8HIFbyNe)
-[[DEMO Brain-calc]](https://asciinema.org/a/SLkxu2hZrkslGYRrZ6wkDVFFH)
-[[DEMO Brain-gcd]](https://asciinema.org/a/68hcSLtJfo64OFnw7VeLd3tZb)
-[[DEMO Brain-progression]](https://asciinema.org/a/XdsGE4gaWQ0id2rNNtDtEZbyb)
-[[DEMO Brain-prime]]( https://asciinema.org/a/PVXjfxzeiD4AnnE4jXobMo7KJ)
+#### Install Brain-games
+[![Demo Install Brain-games](https://asciinema.org/a/pndO6OGfilZJBofy9BHXwVJbJ.svg)](https://asciinema.org/a/pndO6OGfilZJBofy9BHXwVJbJ)
+#### Brain-even
+[![DEMO Brain-even](https://asciinema.org/a/0XgamVlRsH6ojOX8i8HIFbyNe.svg)](https://asciinema.org/a/0XgamVlRsH6ojOX8i8HIFbyNe)
+#### Brain-calc
+[![DEMO Brain-calc](https://asciinema.org/a/SLkxu2hZrkslGYRrZ6wkDVFFH.svg)](https://asciinema.org/a/SLkxu2hZrkslGYRrZ6wkDVFFH)
+#### Brain-gcd
+[![DEMO Brain-gcd](https://asciinema.org/a/68hcSLtJfo64OFnw7VeLd3tZb.svg)](https://asciinema.org/a/68hcSLtJfo64OFnw7VeLd3tZb)
+#### Brain-progression
+[![Brain-progression](https://asciinema.org/a/XdsGE4gaWQ0id2rNNtDtEZbyb.svg)](https://asciinema.org/a/XdsGE4gaWQ0id2rNNtDtEZbyb)
+#### Brain-prime
+[![DEMO Brain-prime](https://asciinema.org/a/PVXjfxzeiD4AnnE4jXobMo7KJ.svg)](https://asciinema.org/a/PVXjfxzeiD4AnnE4jXobMo7KJ)

@@ -1,3 +1,6 @@
+import getRandomNum from '../helpers.js';
+import runEngine from '../index.js';
+
 const findGcd = (roundNumber1, roundNumber2) => {
   let gcd = (roundNumber1 <= roundNumber2) ? roundNumber1 : roundNumber2;
   for (gcd; gcd > 0; gcd -= 1) {
@@ -5,20 +8,18 @@ const findGcd = (roundNumber1, roundNumber2) => {
       return String(gcd);
     }
   }
-  return undefined;
+  return 1;
 };
 
 export const task = 'Find the greatest common divisor of given numbers.';
 
-export const getArrQuestionAnswer = () => {
-  const result = [];
+export const generateRound = () => {
+  const number1 = getRandomNum();
+  const number2 = getRandomNum();
+  const answer = findGcd(number1, number2);
+  const question = `${number1} ${number2}`;
 
-  const roundNumber1 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
-  const roundNumber2 = Math.ceil(Math.random() * 100); // '* 100' получаем число > 0 и <= 100
-  const roundAnswer = findGcd(roundNumber1, roundNumber2);
-  const roundQuestion = `${roundNumber1} ${roundNumber2}`;
-
-  result.push(roundQuestion);
-  result.push(roundAnswer);
-  return result;
+  return [question, answer];
 };
+
+export const startGame = () => runEngine(task, generateRound);

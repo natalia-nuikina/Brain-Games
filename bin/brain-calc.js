@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { task, getArrQuestionAnswer } from '../src/games/calc.js';
-import workWithUser from '../src/index.js';
+import { startGame } from '../src/games/calc.js';
 
-workWithUser(task, getArrQuestionAnswer);
+startGame();

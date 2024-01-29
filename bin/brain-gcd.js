@@ -1,5 +1,4 @@
 #!/usr/bin/env node
-import { task, getArrQuestionAnswer } from '../src/games/gcd.js';
-import workWithUser from '../src/index.js';
+import { startGame } from '../src/games/gcd.js';
 
-workWithUser(task, getArrQuestionAnswer);
+startGame();

@@ -1,25 +1,24 @@
 import readlineSync from 'readline-sync';
 
-const workWithUser = (task, getArrQuestionAnswer) => {
-  const name = readlineSync.question('Welcome to the Brain Games! \nMay I have your name? ');
+const runEngine = (task, generateRound) => {
+  console.log('Welcome to the Brain Games!');
+  const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
 
   console.log(task);
-  for (let i = 0; i < 3; i += 1) {
-    const arrQuestionAnswer = getArrQuestionAnswer();
-    // console.log(arrQuestionAnswer);
-    const question = arrQuestionAnswer[0];
-    const correctAnswer = arrQuestionAnswer[1];
+  for (let i = 0; i < 3; i += 1) { // we need 3 round
+    const arrQuestionAnswer = generateRound();
+    const [question, correctAnswer] = arrQuestionAnswer;
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
-    if (userAnswer === correctAnswer) {
-      console.log('Correct!');
-    } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.\nLet's try again, ${name}!`);
+    if (userAnswer !== correctAnswer) {
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'.`);
+      console.log(`Let's try again, ${name}!`);
       return;
     }
+    console.log('Correct!');
   }
   console.log(`Congratulations, ${name}!`);
 };
 
-export default workWithUser;
+export default runEngine;
