@@ -1,7 +1,7 @@
-import getRandomNum from '../helpers.js';
+import getRandomNumber from '../helpers.js';
 import runEngine from '../index.js';
 
-const isEven = (number) => {
+const isPrime = (number) => {
   if (number < 2) {
     return false;
   }
@@ -16,9 +16,9 @@ const isEven = (number) => {
 export const task = 'Answer "yes" if given number is prime. Otherwise answer "no".';
 
 export const generateRound = () => {
-  const number = getRandomNum();
-  const question = number;
-  const answer = isEven(number) ? 'yes' : 'no';
+  const rangeNumbers = 100;
+  const question = getRandomNumber(rangeNumbers);
+  const answer = isPrime(question) ? 'yes' : 'no';
 
   return [question, answer];
 };

@@ -6,9 +6,10 @@ const runEngine = (task, generateRound) => {
   console.log(`Hello, ${name}!`);
 
   console.log(task);
-  for (let i = 0; i < 3; i += 1) { // we need 3 round
-    const arrQuestionAnswer = generateRound();
-    const [question, correctAnswer] = arrQuestionAnswer;
+  const countRound = 3;
+  for (let i = 0; i < countRound; i += 1) {
+    const [question, correctAnswer] = generateRound();
+    console.log([question, correctAnswer]);
     console.log(`Question: ${question}`);
     const userAnswer = readlineSync.question('Your answer: ');
     if (userAnswer !== correctAnswer) {
