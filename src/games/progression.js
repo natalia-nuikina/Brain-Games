@@ -20,7 +20,7 @@ export const generateRound = () => {
   const maxStep = 5;
   const step = getRandomNumber(minStep, maxStep);
 
-  const progressionLength = 9;
+  const progressionLength = 10;
   const resultNumbers = getProgression(startNumber, step, progressionLength);
 
   const minIndex = 0;
