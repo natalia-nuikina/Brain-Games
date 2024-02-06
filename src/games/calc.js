@@ -22,7 +22,7 @@ export const generateRound = () => {
   const number1 = getRandomNumber(minNumber, maxNumber);
   const number2 = getRandomNumber(minNumber, maxNumber);
   const minIndexOfOperators = 0;
-  const maxIndexOfOperators = operators.length;
+  const maxIndexOfOperators = operators.length - 1;
   const operator = operators[getRandomNumber(minIndexOfOperators, maxIndexOfOperators)];
   const question = `${number1} ${operator} ${number2}`;
   const answer = String(calculate(operator, number1, number2));
