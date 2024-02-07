@@ -17,13 +17,9 @@ export const task = 'What is the result of the expression?';
 
 export const generateRound = () => {
   const operators = ['+', '-', '*'];
-  const minNumber = 0;
-  const maxNumber = 100;
-  const number1 = getRandomNumber(minNumber, maxNumber);
-  const number2 = getRandomNumber(minNumber, maxNumber);
-  const minIndexOfOperators = 0;
-  const maxIndexOfOperators = operators.length - 1;
-  const operator = operators[getRandomNumber(minIndexOfOperators, maxIndexOfOperators)];
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
+  const operator = operators[getRandomNumber(0, operators.length - 1)];
   const question = `${number1} ${operator} ${number2}`;
   const answer = String(calculate(operator, number1, number2));
 

@@ -12,24 +12,14 @@ const getProgression = (startNumber, progressionStep, progressionLength) => {
 export const task = 'What number is missing in the progression?';
 
 export const generateRound = () => {
-  const minNumber = 0;
-  const maxNumber = 100;
-  const startNumber = getRandomNumber(minNumber, maxNumber);
+  const startNumber = getRandomNumber(0, 100);
+  const step = getRandomNumber(1, 5);
+  const progression = getProgression(startNumber, step, 10);
+  const randomIndex = getRandomNumber(0, progression.length);
 
-  const minStep = 1;
-  const maxStep = 5;
-  const step = getRandomNumber(minStep, maxStep);
-
-  const progressionLength = 10;
-  const resultNumbers = getProgression(startNumber, step, progressionLength);
-
-  const minIndex = 0;
-  const maxIndex = resultNumbers.length;
-  const randomIndex = getRandomNumber(minIndex, maxIndex);
-
-  const answer = String(resultNumbers[randomIndex]);
-  resultNumbers.splice(randomIndex, 1, '..');
-  const question = resultNumbers.join(' ');
+  const answer = String(progression[randomIndex]);
+  progression.splice(randomIndex, 1, '..');
+  const question = progression.join(' ');
   return [question, answer];
 };
 

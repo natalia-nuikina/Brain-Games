@@ -14,10 +14,8 @@ const findGcd = (roundNumber1, roundNumber2) => {
 export const task = 'Find the greatest common divisor of given numbers.';
 
 export const generateRound = () => {
-  const minNumber = 0;
-  const maxNumber = 100;
-  const number1 = getRandomNumber(minNumber, maxNumber);
-  const number2 = getRandomNumber(minNumber, maxNumber);
+  const number1 = getRandomNumber(0, 100);
+  const number2 = getRandomNumber(0, 100);
   const answer = findGcd(number1, number2);
   const question = `${number1} ${number2}`;
 

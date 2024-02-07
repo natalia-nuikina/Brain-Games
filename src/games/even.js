@@ -6,9 +6,7 @@ const isEven = (number) => (number % 2 === 0);
 export const task = 'Answer "yes" if the number is even, otherwise answer "no".';
 
 export const generateRound = () => {
-  const minNumber = 0;
-  const maxNumber = 100;
-  const question = getRandomNumber(minNumber, maxNumber);
+  const question = getRandomNumber(0, 100);
   const answer = isEven(question) ? 'yes' : 'no';
   return [question, answer];
 };
