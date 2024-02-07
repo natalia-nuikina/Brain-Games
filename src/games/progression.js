@@ -15,7 +15,7 @@ export const generateRound = () => {
   const startNumber = getRandomNumber(0, 100);
   const step = getRandomNumber(1, 5);
   const progression = getProgression(startNumber, step, 10);
-  const randomIndex = getRandomNumber(0, progression.length);
+  const randomIndex = getRandomNumber(8, progression.length - 1);
 
   const answer = String(progression[randomIndex]);
   progression.splice(randomIndex, 1, '..');
