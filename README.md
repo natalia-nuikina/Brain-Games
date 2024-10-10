@@ -1,31 +1,25 @@
 # Brain-games
-Five math and logic games. Check your brains!
-
-### Hexlet tests and linter status:
 [![Actions Status](https://github.com/natalia-nuikina/frontend-project-44/actions/workflows/hexlet-check.yml/badge.svg)](https://github.com/natalia-nuikina/frontend-project-44/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/6db21d0c188996a307c6/maintainability)](https://codeclimate.com/github/natalia-nuikina/frontend-project-44/maintainability)
 
-### Minimum technical requirements
-Disk space - 36 MB
-Terminal
+### Описание:
 
-### Setup
+«Игры разума» — набор из пяти консольных игр, построенных по принципу популярных мобильных приложений для прокачки мозга. Каждая игра задает вопросы, на которые нужно дать правильные ответы. После трех правильных ответов считается, что игра пройдена. Неправильные ответы завершают игру и предлагают пройти ее заново. Игры:
+- Калькулятор. Арифметические выражения, которые необходимо вычислить.
+- Прогрессия. Поиск пропущенных чисел в последовательности чисел.
+- Определение четного числа.
+- Определение наибольшего общего делителя.
+- Определение простого числа.
+
+### Установка:
 
 ```bash
 make install
-brain-games
+npm link
+# выберите игру:
+brain-even
 ```
 
-### Asciinema:
-#### Install Brain-games
-[![Demo Install Brain-games](https://asciinema.org/a/LTY4XUnZ6Utv3grQztifbju0r.svg)](https://asciinema.org/a/LTY4XUnZ6Utv3grQztifbju0r)
-#### Brain-even
-[![DEMO Brain-even](https://asciinema.org/a/QDIgnd2A5Me7RgzF1XyiS0EgW.svg)](https://asciinema.org/a/QDIgnd2A5Me7RgzF1XyiS0EgW)
-#### Brain-calc
-[![DEMO Brain-calc](https://asciinema.org/a/Bc9WAG1D74bttmV3TD7UabAQI.svg)](https://asciinema.org/a/Bc9WAG1D74bttmV3TD7UabAQI)
-#### Brain-gcd
-[![DEMO Brain-gcd](https://asciinema.org/a/ZGGcIqcqxht9Pqi8iIrjVKjnO.svg)](https://asciinema.org/a/ZGGcIqcqxht9Pqi8iIrjVKjnO)
-#### Brain-progression
-[![Brain-progression](https://asciinema.org/a/Y65s3GcocQ20mCxq5LfoPkOVe.svg)](https://asciinema.org/a/Y65s3GcocQ20mCxq5LfoPkOVe)
-#### Brain-prime
-[![DEMO Brain-prime](https://asciinema.org/a/6Hjhy6EE3QpBFnY7aPExAtUFo.svg)](https://asciinema.org/a/6Hjhy6EE3QpBFnY7aPExAtUFo)
+### Пример игры Brain-even:
+
+[![Brain-even](https://asciinema.org/a/f1RZQuZS9Xs2wVJClyuX2pNoP.svg)](https://asciinema.org/a/f1RZQuZS9Xs2wVJClyuX2pNoP)
